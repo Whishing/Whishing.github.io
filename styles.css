@@ -350,6 +350,11 @@ h1 small {
   background: var(--surface);
 }
 
+/* These demos and result figures use their own proportions without letterboxing. */
+.publication-media--natural {
+  aspect-ratio: auto;
+}
+
 .publication-thumb {
   display: block;
   width: 100%;
