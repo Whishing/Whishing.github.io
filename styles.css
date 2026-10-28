@@ -336,6 +336,7 @@ h1 small {
 }
 
 .publication-media {
+  position: relative;
   grid-column: 1;
   grid-row: 1 / span 4;
   align-self: center;
@@ -350,16 +351,12 @@ h1 small {
   background: var(--surface);
 }
 
-/* These demos and result figures use their own proportions without letterboxing. */
-.publication-media--natural {
-  aspect-ratio: auto;
-}
-
 .publication-thumb {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -488,7 +485,6 @@ video.publication-thumb {
     grid-column: 1;
     grid-row: auto;
     display: block;
-    aspect-ratio: auto;
     margin-bottom: 0.8rem;
   }
 
